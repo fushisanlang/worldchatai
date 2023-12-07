@@ -64,7 +64,10 @@
       <n-button class="w-full h-8" type="primary" :enabled="loading" @click="login">
         {{ $t('commons.login') }}
       </n-button>
-      <n-button class="w-full h-8" type="primary" :enabled="loading" @click="register">
+      <div>
+      <br><br><br>
+      </div>
+      <n-button class="w-full h-8" type="primary" style="background-color: blue;" :enabled="loading" @click="register">
         {{ $t('commons.register') }}
       </n-button>
     </n-card>
@@ -154,6 +157,10 @@ const login = async () => {
         loading.value = false;
       }
     });
+};
+
+const register = () => {
+  router.push({ name: 'register' });
 };
 
 const languageOptions = [
