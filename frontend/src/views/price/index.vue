@@ -1,8 +1,6 @@
 <template>
   <div class="container">
     <h1 class="title" style="color: #1a237e">World Chat AI Pricing Plans</h1>
-
-
     
     <div class="pricing-sections">
       <div class="pricing-section">
@@ -50,15 +48,15 @@
       </div>
     </div>
 
-      <div class="contact-info">
+    <div class="contact-info">
       <!-- Contact Information section -->
       <h3>请通过邮件联系我们进行注册: wca@fushisanlang.cn</h3>
       <h3>或者添加如下企业微信联系人: </h3>
       <img class="qr-code" src="/public/wx.png" alt="QR Code">
     </div>
   </div>
-
 </template>
+
 
 <script>
 export default {
@@ -76,32 +74,6 @@ body {
   background-color: #f5f5f5;
 }
 
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 20px;
-    text-align: center;
-
-}
-
-.title {
-  font-size: 32px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-info {
-  margin-bottom: 20px;
-}
-
-.pricing-sections {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-
-
 
 
 
@@ -110,33 +82,12 @@ body {
   font-size: 16px;
   color: #666;
 }
-.pricing-section {
-  flex-basis: 30%; /* Adjust this value as needed */
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 15px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
 
-.plan-header {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #2e7d32; /* 修改标题颜色 */
-}
 
-.plan-price {
-  font-size: 18px;
-  color: #64b5f6; /* 修改价格颜色 */
-}
 
-.pricing-section h2 {
-  font-size: 35px;
-  margin-bottom: 15px;
-  color: #757575; /* 修改小标题颜色 */
-}
+
+
+
 .h1 {
   font-size: 50px;
 }
@@ -145,5 +96,64 @@ body {
   margin-bottom: 15px;
   color: #d7ccc8; /* 修改小标题颜色 */
 }
-/* Add other CSS styles... */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.pricing-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pricing-section {
+  flex: 0 1 calc(45% - 20px); /* 调整每个 section 的宽度 */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plan-header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.plan-price {
+  font-size: 16px;
+  color: #64b5f6;
+}
+
+.pricing-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #757575;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.qr-code {
+  max-width: 100%; /* 让二维码图像适应容器宽度 */
+  height: auto;
+}
 </style>
