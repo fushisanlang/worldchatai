@@ -1,6 +1,7 @@
 {
   "commons": {
     "register": "注册",
+    "price": "价位",
     "notLogin": "未登录",
     "siteTitle": "ChatGPT",
     "confirm": "确定",

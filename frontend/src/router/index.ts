@@ -28,6 +28,15 @@ const router = createRouter({
       },
     },
     {
+      path: '/price',
+      name: 'price',
+      component: () => import('@/views/price/index.vue'),
+      meta: {
+        requiresAuth: false,
+        roles: ['superuser', 'user'],
+      },
+    },
+    {
       path: '/register',
       name: 'register',
       component: () => import('@/views/register/index.vue'),

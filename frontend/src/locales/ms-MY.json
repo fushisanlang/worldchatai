@@ -1,5 +1,7 @@
 {
   "commons": {
+    "register": "Daftar",
+    "price": "Harga",
     "notLogin": "Belum log masuk",
     "siteTitle": "ChatGPT",
     "confirm": "Sahkan",

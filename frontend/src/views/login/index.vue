@@ -65,9 +65,9 @@
         {{ $t('commons.login') }}
       </n-button>
       <div>
-      <br><br><br>
+      <br>
       </div>
-      <n-button class="w-full h-8" type="primary" style="background-color: blue;" :enabled="loading" @click="register">
+      <n-button class="w-full h-8" type="primary" style="background-color: #ff9900;" :enabled="loading" @click="register">
         {{ $t('commons.register') }}
       </n-button>
     </n-card>
@@ -160,7 +160,7 @@ const login = async () => {
 };
 
 const register = () => {
-  router.push({ name: 'register' });
+  router.push({ name: 'price' });
 };
 
 const languageOptions = [
