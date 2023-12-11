@@ -1,5 +1,5 @@
 FROM node:18-alpine AS FrontendBuilder
-
+RUN npm config set registry http://registry.npmmirror.com
 WORKDIR /app
 RUN npm install pnpm -g
 COPY frontend/package*.json ./frontend/

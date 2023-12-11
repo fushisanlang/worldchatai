@@ -28,7 +28,7 @@ def insert_data():
     conn.commit()
     conn.close()
     callwx(email, wechat,want)
-    return 'ok' 
+    return render_template('done.html',version="基础版")
 
 @app.route('/base')
 def base():

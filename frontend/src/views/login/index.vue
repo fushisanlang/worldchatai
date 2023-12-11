@@ -160,7 +160,7 @@ const login = async () => {
 };
 
 const register = () => {
-  router.push({ name: 'price' });
+   window.open('https://add.fushisanlang.cn', '_blank'); 
 };
 
 const languageOptions = [
