@@ -193,7 +193,8 @@
               <li>5*8小时邮件技术支持</li>
               <li>每月1万次对话</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">注册基础版</button>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='{{ url_for('base') }}'" >注册基础版</button>
+
           </div>
         </div>
       </div>
@@ -210,7 +211,7 @@
               <li>5*12小时邮件技术支持</li>
               <li>每月3万次对话</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">注册绑定版</button>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='{{ url_for('bind') }}'" >注册绑定版</button>
           </div>
         </div>
       </div>
@@ -227,13 +228,13 @@
               <li>7*12小时微信技术支持</li>
               <li>对话不限次数</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-primary">注册高级版</button>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="window.location.href='{{ url_for('pro') }}'" >注册高级版</button>
           </div>
         </div>
       </div>
     </div>
 
-    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+    <h2 class="display-6 text-center mb-4">订阅对比</h2>
 
     <div class="table-responsive">
       <table class="table text-center">
@@ -275,12 +276,6 @@
             <th scope="row" class="text-start">无限对话次数</th>
             <td></td>
             <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-start">Sharing</th>
-            <td></td>
-            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
           </tr>
           <tr>

@@ -29,5 +29,18 @@ def insert_data():
     conn.close()
     callwx(email, wechat,want)
     return 'ok' 
+
+@app.route('/base')
+def base():
+    return "base"
+
+@app.route('/bind')
+def bind():
+    return "bind"
+
+@app.route('/pro')
+def pro():
+    return "pro"
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0",  debug=True)  # 启动 Flask 应用
