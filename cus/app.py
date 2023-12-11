@@ -16,9 +16,9 @@ app = Flask(__name__)
 @app.route('/')
 def root():
     return render_template('index.html')
-@app.route('/insert', methods=['POST'])
+@app.route('/add', methods=['POST'])
 def insert_data():
-    data = request.json  # 从 POST 请求中获取 JSON 数据
+    data = request.form  # 从 POST 请求中获取 JSON 数据
     email = data.get('email')
     wechat = data.get('wechat')
     want = data.get('want')
@@ -32,15 +32,16 @@ def insert_data():
 
 @app.route('/base')
 def base():
-    return "base"
+    #version
+    return render_template('index.html',version="基础版")
 
 @app.route('/bind')
 def bind():
-    return "bind"
+    return render_template('index.html',version="绑定版")
 
 @app.route('/pro')
 def pro():
-    return "pro"
+    return render_template('index.html',version="高级版")
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",  debug=True)  # 启动 Flask 应用
+    app.run(host="0.0.0.0",  debug=True) 
