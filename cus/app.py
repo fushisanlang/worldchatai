@@ -33,15 +33,15 @@ def insert_data():
 @app.route('/base')
 def base():
     #version
-    return render_template('index.html',version="基础版")
+    return render_template('add.html',version="基础版")
 
 @app.route('/bind')
 def bind():
-    return render_template('index.html',version="绑定版")
+    return render_template('add.html',version="绑定版")
 
 @app.route('/pro')
 def pro():
-    return render_template('index.html',version="高级版")
+    return render_template('add.html',version="高级版")
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",  debug=True) 
