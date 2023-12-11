@@ -8,6 +8,7 @@ app = Flask(__name__)
 #    id INTEGER PRIMARY KEY AUTOINCREMENT,
 #    email TEXT NOT NULL,
 #    wechat TEXT NOT NULL,
+#    want TEXT NOT NULL,
 #    done INTEGER DEFAULT 0
 #);
 ##########################
@@ -20,12 +21,13 @@ def insert_data():
     data = request.json  # 从 POST 请求中获取 JSON 数据
     email = data.get('email')
     wechat = data.get('wechat')
+    want = data.get('want')
     conn = sqlite3.connect('/app/data/database.db')
     cursor = conn.cursor()
-    cursor.execute('INSERT INTO userWait (email, wechat) VALUES (?, ?)', (email, wechat))
+    cursor.execute('INSERT INTO userWait (email, wechat,want) VALUES (?, ?,?)', (email, wechat,want))
     conn.commit()
     conn.close()
-    callwx(email, wechat)
+    callwx(email, wechat,want)
     return 'ok' 
 if __name__ == '__main__':
     app.run(host="0.0.0.0",  debug=True)  # 启动 Flask 应用
