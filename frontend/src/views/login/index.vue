@@ -26,6 +26,10 @@
         :rules="loginRules"
         :wrapper-col="{ span: 16 }"
       >
+      <div>
+      试用账户：wca
+      试用密码：wca123
+      </div>
         <n-form-item path="username">
           <n-input
             v-model:value="formValue.username"
