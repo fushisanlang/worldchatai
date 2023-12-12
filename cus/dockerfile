@@ -1,5 +1,4 @@
-FROM python:slim
+FROM fushisanlang/wca:cus
 WORKDIR /app
 COPY . .
-RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
